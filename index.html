@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ToneDef Web Edition</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+    <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/openiconic.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/tonedef.css">
+    <script src="js/vendor/angular.min.js"></script>
+    <script src="js/vendor/angular-route.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <!--<script src="js/vendor/modernizr-2.8.0.min.js"></script>-->
+</head>
+<body ng-app="ToneDef">
+<div id="Content">
+    <div id="Tabs">
+        <div id="tab_home"><a href="#"></a></div>
+        <div id="tab_dtmf"><a href="#dtmf">DTMF</a></div>
+        <div id="tab_bluebox"><a href="#bluebox">BlueBox</a></div>
+        <div id="tab_other"><a href="#other">Other</a></div>
+    </div>
+    <div id="TabContent">
+        <div ng-view></div>
+    </div>
+    <!-- Add your site or application content here -->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!--<script>window.jQuery || document.write( '<script src="js/vendor/jquery-1.11.1.min.js"><\/script>' )</script>-->
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        (function ( i, s, o, g, r, a, m )
+        {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function ()
+            {
+                (i[r].q = i[r].q || []).push( arguments )
+            }, i[r].l = 1 * new Date();
+            a = s.createElement( o ),
+                    m = s.getElementsByTagName( o )[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore( a, m )
+        })( window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga' );
+
+        ga( 'create', 'UA-40660667-4', 'bytestemplar.com' );
+        ga( 'send', 'pageview' );
+    </script>
+</body>
+</html>

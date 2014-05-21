@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'c64';
+    src:         url('../fonts/c64pro-webfont.eot');
+    src:         url('../fonts/c64pro-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/c64pro-webfont.woff') format('woff'), url('../fonts/c64pro-webfont.ttf') format('truetype'), url('../fonts/c64pro-webfont.svg#c64_proregular') format('svg');
+    font-weight: normal;
+    font-style:  normal;
+}
+
+html {
+    font-family:           "Roboto Condensed", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size:             1.3em;
+    background:            black;
+    color:                 white;
+    -webkit-touch-callout: none;
+    -webkit-user-select:   none;
+    -khtml-user-select:    none;
+    -moz-user-select:      none;
+    -ms-user-select:       none;
+    user-select:           none;
+}
+
+#Content {
+    width:  360px;
+    height: 100%;
+}
+
+#Tabs {
+    display: flex;
+}
+
+#Tabs div {
+    border-right:  1px solid #333;
+    border-bottom: 4px solid transparent;
+    text-align:    center;
+    flex:          1;
+}
+
+#Tabs a {
+    color:           white;
+    text-decoration: none;
+}
+
+#Tabs .selected {
+    border-bottom: 4px solid #33B5E5;
+}
+
+#TabContent {
+    width:    100%;
+    height:   100%;
+    overflow: auto;
+}
+
+.keypad {
+    width: 100%;
+    clear: both;
+}
+
+.dtmf {
+    background: orange;
+}
+
+.bluebox {
+    background: blue;
+}
+
+.other {
+    background: #0F0;
+}
+
+.keypad .button_row {
+    clear:   both;
+    display: flex;
+}
+
+.keypad .button {
+    font-family:      "C64", consolas, monospace;
+    flex:             1;
+    height:           4em;
+    font-weight:      bold;
+    text-align:       center;
+    vertical-align:   middle;
+    background-image: url("../img/button_normal.png");
+    background-size:  100% 100%;
+    color:            black;
+    display:          inline-flex;
+}
+
+.keypad .button:hover {
+    color:  white;
+    cursor: pointer;
+}
+
+.keypad .button:active {
+    color:            white;
+    background-image: url("../img/button_selected.png");
+}
+
+.button .label {
+    flex:        1;
+    padding-top: 1em;
+}
+
+.button .label .letters {
+    font-size:   0.6em;
+    float:       left;
+    width:       100%;
+    line-height: 1em;
+}
+
+.button .label .digit {
+    font-size: 1.2em;
+    width:     100%;
+}
+
+#tab_home a:before {
+    font-family:             "Icons";
+    line-height:             1;
+    vertical-align:          baseline;
+    -webkit-font-smoothing:  antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content:                 '\e074';
+}
