@@ -25,7 +25,9 @@ html {
 }
 
 #Tabs {
-    display: flex;
+    display:     flex;
+    font-size:   0.8em;
+    font-weight: bold;
 }
 
 #Tabs div {
@@ -63,6 +65,10 @@ html {
     background: blue;
 }
 
+.redbox {
+    background: red;
+}
+
 .other {
     background: #0F0;
 }
@@ -90,7 +96,7 @@ html {
     cursor: pointer;
 }
 
-.keypad .button:active {
+.keypad .button:active, .keypad .active {
     color:            white;
     background-image: url("../img/button_selected.png");
 }

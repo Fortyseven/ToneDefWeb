@@ -13,10 +13,11 @@
     <link rel="stylesheet" href="css/openiconic.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/tonedef.css">
-    <script src="js/vendor/angular.min.js"></script>
-    <script src="js/vendor/angular-route.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+    <script src="app/vendor/angular.min.js"></script>
+    <script src="app/vendor/angular-route.js"></script>
+    <script src="app/plugins.js"></script>
+    <script src="app/main.js"></script>
+    <script src="app/ToneGenerator.js"></script>
     <!--<script src="js/vendor/modernizr-2.8.0.min.js"></script>-->
 </head>
 <body ng-app="ToneDef">
@@ -25,6 +26,7 @@
         <div id="tab_home"><a href="#"></a></div>
         <div id="tab_dtmf"><a href="#dtmf">DTMF</a></div>
         <div id="tab_bluebox"><a href="#bluebox">BlueBox</a></div>
+        <div id="tab_redbox"><a href="#redbox">RedBox</a></div>
         <div id="tab_other"><a href="#other">Other</a></div>
     </div>
     <div id="TabContent">
@@ -52,7 +54,7 @@
         })( window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga' );
 
         ga( 'create', 'UA-40660667-4', 'bytestemplar.com' );
-        ga('require', 'displayfeatures');
+        ga( 'require', 'displayfeatures' );
         ga( 'send', 'pageview' );
     </script>
 </body>
